@@ -763,7 +763,7 @@ img {
 .experiences__content {
   position: relative;
   background-color: var(--container-color);
-  padding: 3.5rem .5rem 1.25rem 1.5rem;
+  padding: 3.5rem .5rem 1.25rem .5rem;
   border-radius: .25rem;
   box-shadow: 0 2px 4px rgba(0, 0, 0, .15);
   transition: .3s;
@@ -1018,6 +1018,23 @@ img {
   font-family: var(--body-font);
   font-size: var(--normal-font-size);
   border: none;
+}
+
+.contact__result {
+  font-size: var(--small-font-size);
+  position: absolute;
+  padding: .75rem 1rem .25rem;
+  bottom: 3.5rem;
+  color: var(--title-color);
+}
+
+/* Status color  */
+.color-red {
+  color: hsl(4, 71%, 50%)
+}
+
+.color-blue {
+  color: hsl(207, 56%, 45%)
 }
 
 /*==================== FOOTER ====================*/

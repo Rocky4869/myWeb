@@ -124,6 +124,51 @@ let swiperInterests = new Swiper(".interests__container", {
 //     }
 // });
 
+/*==================== EMAIL JS ====================*/
+const contactForm = document.getElementById('contact-form'),
+    contactName = document.getElementById('contact-name'),
+    contactEmail = document.getElementById('contact-email'),
+    contactProject = document.getElementById('contact-project'),
+    contactMessage = document.getElementById('contact-message'),
+    contactResult = document.getElementById('contact-result')
+
+const sendEmail = (e) => {
+    e.preventDefault()
+
+    // Check if the field has a value
+    if (contactName.value === '' || contactEmail.value === '' || contactProject.value === '' || contactMessage.value === '') {
+        // Add and remove color
+        contactResult.classList.remove('color-blue')
+        contactResult.classList.add('color-red')
+
+        // Show message
+        contactResult.textContent = 'Write all the input fields ❌'
+    }
+    else {
+        // serviceID - templateID - #form - publicKey
+        emailjs.sendForm('service_j31pd5j', 'template_io62inl', '#contact-form', '7j2HGj6Dz8tzKzk1h')
+            .then(() => {
+                // Show message and add color 
+                contactResult.classList.add('color-blue')
+                contactResult.textContent = 'Message Sent ✅'
+
+                // Remove message after five seconds
+                setTimeout(() => {
+                    contactResult.textContent = ''
+                }, 5000)
+            }, (error) => {
+                alert('OOPS! Something has failed...', error)
+            })
+
+        // To clear the input field
+        contactName.value = ''
+        contactEmail.value = ''
+        contactProject.value = ''
+        contactMessage.value = ''
+    }
+}
+contactForm.addEventListener('submit', sendEmail)
+
 /*==================== SCROLL SECTIONS ACTIVE LINK ====================*/
 const sections = document.querySelectorAll('section[id]')
 

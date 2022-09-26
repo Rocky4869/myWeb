@@ -691,33 +691,31 @@
                     </div>
                 </div>
 
-                <form action="email.php" method="post" name="myemailform" class="contact__form grid">
+                <form action="" class="contact__form grid" id="contact-form">
                     <div class="contact__inputs grid">
                         <div class="contact__content">
                             <label for="" class="contact__label">Name</label>
-                            <input type="text" class="contact__input" name="name">
+                            <input type="text" class="contact__input" name="user_name" id="contact-name">
                         </div>
                         <div class="contact__content">
                             <label for="" class="contact__label">Email</label>
-                            <input type="email" class="contact__input" name="email">
+                            <input type="email" class="contact__input" name="user_email" id="contact-email">
                         </div>
                     </div>
                     <div class="contact__content">
                         <label for="" class="contact__label">Project</label>
-                        <input type="text" class="contact__input" name="project">
+                        <input type="text" class="contact__input" name="user_project" id="contact-project">
                     </div>
                     <div class="contact__content">
                         <label for="" class="contact__label">Message</label>
-                        <textarea name="" id="" cols="0" rows="7" class="contact__input" name="message"></textarea>
+                        <textarea cols="0" rows="7" class="contact__input" name="user_message" id="contact-message"></textarea>
                     </div>
-
+                    <p class="contact__result" id="contact-result"></p>
                     <div>
-                        <!-- <input type="submit" class="button button--flex" value="Send Message"> -->
-
-                        <a href="#" class="button button--flex">
+                        <button type="submit" class="button button--flex">
                             Send Message
                             <i class="uil uil-message button__icon"></i>
-                        </a>
+                        </button>
                     </div>
                 </form>
             </div>
@@ -771,6 +769,9 @@
 
     <!--==================== SCROLL JS ====================-->
     <script src="https://unpkg.com/scrollreveal"></script>
+
+    <!--==================== EMAIL JS ====================-->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
 
     <!--==================== MAIN JS ====================-->
     <script src="assets/js/main.js"></script>
