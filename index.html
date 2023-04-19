@@ -12,6 +12,9 @@
     <!--==================== SWIPER CSS ====================-->
     <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
 
+     <!--==================== Notyf ====================-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/notyf@3/notyf.min.css">
+
     <!--==================== CSS ====================-->
     <link rel="stylesheet" href="assets/css/styles.css">
     <link rel="shortcut icon" href="assets/img/myphoto1.jpg" type="image/x-icon">
@@ -48,8 +51,8 @@
                         </a>
                     </li>
                     <li class="nav__item">
-                        <a href="#interests" class="nav__link">
-                            <i class="uil uil-scenery nav__icon"></i> Interests
+                        <a href="#portfolio" class="nav__link">
+                            <i class="uil uil-scenery nav__icon"></i> Portfolio
                         </a>
                     </li>
                     <li class="nav__item">
@@ -251,7 +254,7 @@
                             <div class="skills__data">
                                 <div class="skills__titles">
                                     <h3 class="skills__name">C</h3>
-                                    <span class="skills__number">70%</span>
+                                    <span class="skills__number">60%</span>
                                 </div>
                                 <div class="skills__bar">
                                     <span class="skills__percentage skills__c"></span>
@@ -269,7 +272,7 @@
                             <div class="skills__data">
                                 <div class="skills__titles">
                                     <h3 class="skills__name">Python</h3>
-                                    <span class="skills__number">60%</span>
+                                    <span class="skills__number">80%</span>
                                 </div>
                                 <div class="skills__bar">
                                     <span class="skills__percentage skills__python"></span>
@@ -308,7 +311,7 @@
                             <div class="skills__data">
                                 <div class="skills__titles">
                                     <h3 class="skills__name">Figma</h3>
-                                    <span class="skills__number">30%</span>
+                                    <span class="skills__number">50%</span>
                                 </div>
                                 <div class="skills__bar">
                                     <span class="skills__percentage skills__figma"></span>
@@ -355,7 +358,7 @@
                         <!--==================== QUALIFICATION 1 ====================-->
                         <div class="qualification__data">
                             <div>
-                                <img src="assets/img/school.jpg" alt="" class="qualification__img" id="p1">
+                                <img src="assets/img/school.jpg" alt="school.jpg" class="qualification__img" id="p1">
                                 <h3 class="qualification__title">Secondary Education</h3>
                                 <div class="qualification__subtitle">S.K.H. Chan Young Secondary School</div>
                                 <div class="qualification__calendar">
@@ -380,7 +383,7 @@
                             </div>
 
                             <div>
-                                <img src="assets/img/CU.jpg" alt="" class="qualification__img" id="p2">
+                                <img src="assets/img/scholar.jpg" alt="scholar.jpg" class="qualification__img" id="p2">
                                 <h3 class="qualification__title">B.Sc. Computer Science</h3>
                                 <div class="qualification__subtitle">The Chinese University of Hong Kong</div>
                                 <div class="qualification__calendar">
@@ -436,7 +439,7 @@
                                 <div class="qualification__subtitle">PwC HK</div>
                                 <div class="qualification__calendar">
                                     <i class="uil uil-calendar-alt"></i>
-                                    Jan 2023 -  Present
+                                    Jan 2023 -  Mar 2023
                                 </div>
                             </div>
                             <div>
@@ -494,12 +497,13 @@
                             <ul class="experiences__modal-experiences grid">
                                 <li class="experiences__modal-experience">
                                     <i class="uil uil-check-circle experiences__modal-icon"></i>
-                                    <p>Built innovative Web3.0 functional prototype with provided APIs</p>
+                                    <p>Led a team of 5 to develop a Web3.0 decentralized book store prototype using smart contracts and crypto payment strategies</p>
                                 </li>
                                 <li class="experiences__modal-experience">
                                     <i class="uil uil-check-circle experiences__modal-icon"></i>
-                                    <p> Led a team of 5 engineers: Developed a DeBook platform using smart contracts and
-                                        crypto payment strategies</p>
+                                    <p> 
+                                        Utilized provided APIs to develop custom features, such as user authentication and payment processing, and integrated them seamlessly into the platform
+                                    </p>
                                 </li>
 
                             </ul>
@@ -576,90 +580,115 @@
             </div>
         </section>
 
-        <!-- ==================== INTERESTS ==================== -->
-        <section class="interests section" id="interests">
-            <h2 class="section__title">Interests</h2>
-            <span class="section__subtitle">My Interests</span>
+        <!-- ==================== PORTFOLIOS ==================== -->
+        <section class="portfolio section" id="portfolio">
+            <h2 class="section__title">Portfolio</h2>
+            <span class="section__subtitle">Most recent work</span>
 
-            <div class="interests__container container swiper-container">
+            <div class="portfolio__container container swiper-container">
                 <div class="swiper-wrapper">
-                    <!-- ==================== INTERESTS 1 ==================== -->
-                    <div class="interests__content grid swiper-slide">
-                        <img src="assets/img/badminton2.jpg" alt="" class="interests__img">
+                    <!-- ==================== PORTFOLIOS 1 ==================== -->
+                    <div class="portfolio__content grid swiper-slide">
+                        <img src="assets/img/Twitter-1-1-1000x600.jpg" alt="twitter.jpg" class="portfolio__img">
 
-                        <div class="interests__data">
-                            <h3 class="interests__title">Playing Badminton</h3>
+                        <div class="portfolio__data">
+                            <h3 class="portfolio__title">Simplified Twitter</h3>
                             <div>
-                                <i class="uil uil-star interests__icon-star"></i>
-                                <i class="uil uil-star interests__icon-star"></i>
-                                <i class="uil uil-star interests__icon-star"></i>
-                                <i class="uil uil-star interests__icon-star"></i>
-                                <i class="uil uil-star interests__icon-star"></i>
+                                <i class="uil uil-star portfolio__icon-star"></i>
+                                <i class="uil uil-star portfolio__icon-star"></i>
+                                <i class="uil uil-star portfolio__icon-star"></i>
+                                <i class="uil uil-star portfolio__icon-star"></i>
+                                <i class="uil uil-star portfolio__icon-star"></i>
+                                <!-- <div class="button--flex button--small button--link" style="margin-top: 20px; margin-left: 20px;">
+                                    GitHub
+                                    <i class="uil uil-arrow-right button__icon"></i>
+                                </div> -->
                             </div>
-                            <p class="interests__description">I was a member of badminton team in secondary school. I
-                                enjoy smashing and the sound of hitting shuttlecock is very comfortable.
-                                I often play badminton with people at CUHK during leisure time.</p>
-                            <!-- <a href="#" class="button button--flex button--small interests__button">
+                            <div class="portfolio__description">
+                                <div>
+                                    <i class="uil uil-check-circle experiences__modal-icon"></i>
+                                    Organized regular meetings, delegated tasks, and provided technical support to teammates, resulting in a final grade of <b>95%</b>
+                                </div>
+                                <div style="margin-top: 20px;">
+                                    <i class="uil uil-check-circle experiences__modal-icon"></i>
+                                    Successfully promoted the platform through a landing page, resulting in over <b>500</b> sign-ups
+                                </div>
+                            </div>
+                            <a href="https://rocky4869.github.io/" target="_blank" class="button--flex button--small button--link experiences__button" style="margin-top: 20px;">
                                 Demo
                                 <i class="uil uil-arrow-right button__icon"></i>
-                            </a> -->
+                            </a>
                         </div>
                     </div>
-                    <!-- ==================== INTERESTS 2 ==================== -->
-                    <div class="interests__content grid swiper-slide">
-                        <img src="assets/img/guitar.jpg" alt="" class="interests__img">
+                    <!-- ==================== PORTFOLIOS 2 ==================== -->
+                    <div class="portfolio__content grid swiper-slide">
+                        <img src="assets/img/talent_quest.jpeg" alt="talent_quest.jpg" class="portfolio__img">
 
-                        <div class="interests__data">
-                            <h3 class="interests__title">Playing the Guitar</h3>
+                        <div class="portfolio__data">
+                            <h3 class="portfolio__title">Talent Quest 2K23</h3>
                             <div>
-                                <i class="uil uil-star interests__icon-star"></i>
-                                <i class="uil uil-star interests__icon-star"></i>
-                                <i class="uil uil-star interests__icon-star"></i>
-                                <i class="uil uil-star interests__icon-star"></i>
-                                <i class="uil uil-star interests__icon-star"></i>
+                                <i class="uil uil-star portfolio__icon-star"></i>
+                                <i class="uil uil-star portfolio__icon-star"></i>
+                                <i class="uil uil-star portfolio__icon-star"></i>
+                                <i class="uil uil-star portfolio__icon-star"></i>
+                                <i class="uil uil-star portfolio__icon-star"></i>
                             </div>
-                            <p class="interests__description">I started playing the guitar since I was in secondary
-                                school.
-                                I learned simple chords but I have a bad singing voice.
-                                I was then impressed by the style of playing the guitar - Fingerstyle. I am passionate
-                                about
-                                composing and playing emotional songs.</p>
-                            <!-- <a href="#" class="button button--flex button--small interests__button">
+                            <div class="portfolio__description">
+                                <div>
+                                    <i class="uil uil-check-circle experiences__modal-icon"></i>
+                                    Developed the frontend for a Three.js web puzzle game - <b>20,000+</b> visits and <b>1000+</b> sign-ups
+                                </div>
+                                <div style="margin-top: 20px;">
+                                    <i class="uil uil-check-circle experiences__modal-icon"></i>
+                                    Collaborated and maintained with five developers via GitOps workflow
+                                </div>
+                                <div style="margin-top: 20px;">
+                                    <i class="uil uil-check-circle experiences__modal-icon"></i>
+                                    Designed and implemented the landing page
+                                </div>
+                            </div>
+                            <a href="https://hkstp.careerhackers.io/" target="_blank" class="button--flex button--small button--link experiences__button" style="margin-top: 20px;">
                                 Demo
                                 <i class="uil uil-arrow-right button__icon"></i>
-                            </a> -->
+                            </a>
                         </div>
                     </div>
-                    <!-- ==================== INTERESTS 3 ==================== -->
-                    <div class="interests__content grid swiper-slide">
-                        <img src="assets/img/view.jpg" alt="" class="interests__img">
+                    <!-- ==================== PORTFOLIOS 3 ==================== -->
+                    <div class="portfolio__content grid swiper-slide">
+                        <img src="assets/img/netflix.webp" alt="netflix.webq" class="portfolio__img">
 
-                        <div class="interests__data">
-                            <h3 class="interests__title">Hiking</h3>
+                        <div class="portfolio__data">
+                            <h3 class="portfolio__title">Simplified Netflix</h3>
                             <div>
-                                <i class="uil uil-star interests__icon-star"></i>
-                                <i class="uil uil-star interests__icon-star"></i>
-                                <i class="uil uil-star interests__icon-star"></i>
-                                <i class="uil uil-star interests__icon-star"></i>
-                                <i class="uil uil-star interests__icon-star"></i>
+                                <i class="uil uil-star portfolio__icon-star"></i>
+                                <i class="uil uil-star portfolio__icon-star"></i>
+                                <i class="uil uil-star portfolio__icon-star"></i>
+                                <i class="uil uil-star portfolio__icon-star"></i>
+                                <i class="uil uil-star portfolio__icon-star"></i>
                             </div>
-                            <p class="interests__description">I like hiking because I can admire breathtaking views and
-                                breathe some fresh air.
-                                I like being surrounded by nature and it embraces me in a warm. Staying in a green
-                                environment can also help me think about the purpose of life.</p>
-                            <!-- <a href="#" class="button button--flex button--small interests__button">
+                            <div class="portfolio__description">
+                                <div>
+                                    <i class="uil uil-check-circle experiences__modal-icon"></i>
+                                    Developed a simplistic interactive website with vanilla Javascript
+                                </div>
+                                <div style="margin-top: 20px;">
+                                    <i class="uil uil-check-circle experiences__modal-icon"></i>
+                                    Focused on clean and reusable component based coding style for convenient updates to contents
+                                </div>
+                            </div>
+                            <a href="https://rocky4869.github.io/web-dev-project-netflix/" target="_blank" class="button--flex button--small button--link experiences__button" style="margin-top: 20px;">
                                 Demo
                                 <i class="uil uil-arrow-right button__icon"></i>
-                            </a> -->
+                            </a>
                         </div>
                     </div>
                 </div>
 
                 <div class="swiper-button-next">
-                    <i class="uil uil-angle-right-b swiper-interests-icon"></i>
+                    <i class="uil uil-angle-right-b swiper-portfolio-icon"></i>
                 </div>
                 <div class="swiper-button-prev">
-                    <i class="uil uil-angle-left-b swiper-interests-icon"></i>
+                    <i class="uil uil-angle-left-b swiper-portfolio-icon"></i>
                 </div>
 
                 <div class="swiper-pagination"></div>
@@ -766,7 +795,7 @@
                         <a href="#experiences" class="footer__link">Experiences</a>
                     </li>
                     <li>
-                        <a href="#interests" class="footer__link">Interests</a>
+                        <a href="#portfolio" class="footer__link">Portfolio</a>
                     </li>
                     <li>
                         <a href="#contact" class="footer__link">Contact</a>
@@ -799,6 +828,9 @@
 
     <!--==================== SCROLL JS ====================-->
     <script src="https://unpkg.com/scrollreveal"></script>
+
+     <!--==================== Notyf ====================-->
+     <script src="https://cdn.jsdelivr.net/npm/notyf@3/notyf.min.js"></script>
 
     <!--==================== EMAIL JS ====================-->
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
