@@ -132,7 +132,7 @@ const sendEmail = (e) => {
       )
       .then(
         () => {
-          notyf.success("Message Sent ✅");
+          notyf.success("Message Sent successfully");
 
           // Clear input fields after five seconds
           setTimeout(() => {

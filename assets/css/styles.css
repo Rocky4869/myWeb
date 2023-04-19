@@ -463,7 +463,11 @@ img {
 }
 
 /*==================== BUTTONS ====================*/
-
+#msg_button {
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
 .button {
   display: inline-block;
   background-color: var(--first-color);
